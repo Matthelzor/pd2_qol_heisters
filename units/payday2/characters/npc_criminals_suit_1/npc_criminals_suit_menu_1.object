@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel orientation_object="root_point" materials="units/payday2/characters/npc_criminals_suit_1/mtr_dallas" />
+	<sequence_manager file="units/payday2/characters/npc_criminals_suit_1/npc_criminals_suit_1" />
+	<animation_def name="anims/units/menu_character/player_criminal/menu_criminal" />
+
+
+	<bodies>
+
+
+		<body name="body" enabled="true" template="character" friction="0.6" collision_class="ragdoll">
+			<object name="Spine1"/>
+			<object name="c_capsule_body" collision_type="capsule"/>
+		</body>
+		<body name="head" enabled="true" template="character" friction="0.6" collision_class="ragdoll">
+			<object name="Head"/>
+			<object name="c_sphere_head" collision_type="sphere"/>
+		</body>
+
+
+    <body name="Dynamo_Spine" enabled="true" template="character" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Spine"/>
+    </body>
+
+    <body name="Dynamo_Spine1" enabled="true" template="character" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Spine1"/>
+    </body>
+
+    <body name="Dynamo_Spine2" enabled="true" template="character" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Spine2"/>
+    </body>
+
+    <body name="Dynamo_Hips" enabled="true" template="character" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Hips"/>
+      <object name="Hips_Collision" collision_type="capsule" mass="1" restitution="0"/>      
+    </body>
+    <body name="Dynamo_Head" enabled="true" template="character" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Head"/>
+    </body>
+
+
+
+
+
+
+    <body name="Dynamo_LeftUpLeg" enabled="true" template="character" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="LeftUpLeg"/>
+    </body>
+    <body name="Dynamo_LeftLeg" enabled="true" template="character" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="LeftLeg"/>
+    </body>
+
+
+
+    <body name="cloth_LeftUpLeg" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="LeftUpLeg"/>
+      <object name="LeftUpLeg_Collision" collision_type="capsule" mass="1" padding="-4"/>                        
+    </body>
+    <body name="cloth_LeftLeg" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="LeftLeg"/>
+      <object name="LeftLeg_Collision" collision_type="capsule" mass="1" padding="-4"/>                  
+    </body>
+
+
+
+    <body name="Dynamo_RightUpLeg" enabled="true" template="character" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="RightUpLeg"/>
+    </body>
+    <body name="Dynamo_RightLeg" enabled="true" template="character" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="RightLeg"/>
+    </body>
+
+
+    <body name="cloth_RightUpLeg" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="RightUpLeg"/>
+      <object name="RightUpLeg_Collision" collision_type="capsule" mass="1" padding="-4"/>                        
+    </body>
+    <body name="cloth_RightLeg" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="RightLeg"/>
+      <object name="RightLeg_Collision" collision_type="capsule" mass="1" padding="-4"/>                              
+    </body>
+
+
+
+
+    <body name="cloth_Hips" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Hips"/>
+      <object name="Hips_Collision" collision_type="capsule" mass="1" padding="-1"/>                                                                  
+    </body>
+    <body name="cloth_Spine" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Spine"/>
+      <object name="Spine_Collision" collision_type="capsule" mass="1" padding="-4"/>                                                            
+    </body>
+    <body name="cloth_Spine1" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Spine1"/>
+      <object name="Spine1_Collision" collision_type="capsule" mass="1" padding="-4"/>                                                                  
+    </body>
+    <body name="cloth_Spine2" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.1" restitution="0">
+      <object name="Spine2"/>
+      <object name="Spine2_Collision" collision_type="capsule" mass="1" padding="-4"/>                                                            
+    </body>
+
+
+<body name="cloth_Tie_01" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="8.0" ang_damping="8.0" restitution="0">
+  <object name="Tie_01"/>
+  <object name="Tie_01_Collision" collision_type="capsule" mass="1" restitution="0"/>     
+</body>
+
+<body name="cloth_Tie_02" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="8.0" ang_damping="8.0" restitution="0">
+  <object name="Tie_02"/>
+  <object name="Tie_02_Collision" collision_type="capsule" mass="1" restitution="0"/>      
+</body>
+
+<body name="cloth_Tie_03" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="8.0" ang_damping="8.0" restitution="0">
+  <object name="Tie_03"/>
+  <object name="Tie_03_Collision" collision_type="capsule" mass="1" restitution="0"/>      
+</body>
+
+
+
+
+
+
+<!-- Hair Front -->
+<body  name="strand_Jimmy_Hair_Front" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="10.0" ang_damping="20.0" restitution="0.01">
+  <object name="Jimmy_Hair_Front" />
+  <object name="Jimmy_Hair_Front_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<!-- Hair Right -->
+<body  name="strand_Jimmy_Hair_Right" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="10.0" ang_damping="20.0" restitution="0.01">
+  <object name="Jimmy_Hair_Right" />
+  <object name="Jimmy_Hair_Right_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<!-- Hair Left -->
+<body  name="strand_Jimmy_Hair_Left" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="10.0" ang_damping="20.0" restitution="0.01">
+  <object name="Jimmy_Hair_Left" />
+  <object name="Jimmy_Hair_Left_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<!-- Hair Back -->
+<body  name="strand_Jimmy_Hair_Back" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="10.0" ang_damping="20.0" restitution="0.01">
+  <object name="Jimmy_Hair_Back" />
+  <object name="Jimmy_Hair_Back_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+
+
+
+<body  name="cloth_Jacket_Back" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Jacket_Back" />
+  <object name="Jacket_Back_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Jacket_Back_Left" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Jacket_Back_Left" />
+  <object name="Jacket_Back_Left_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Jacket_Back_Right" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Jacket_Back_Right" />
+  <object name="Jacket_Back_Right_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Jacket_Left" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Jacket_Left" />
+  <object name="Jacket_Left_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Jacket_Right" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Jacket_Right" />
+  <object name="Jacket_Right_Collision" collision_type="box" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Jacket_Front_Right" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Jacket_Front_Right" />
+  <object name="Jacket_Front_Right_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Jacket_Front_Left" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Jacket_Front_Left" />
+  <object name="Jacket_Front_Left_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Backside_Right" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Backside_Right" />
+  <object name="Backside_Right_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+<body  name="cloth_Backside_Left" enabled="true" template="cloth" collision_class="hair" collision_group="3" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="25.0" ang_damping="15.0" restitution="0">
+  <object name="Backside_Left" />
+  <object name="Backside_Left_Collision" collision_type="capsule" mass="1" padding="-16"/>
+</body>
+
+
+
+	</bodies>
+
+
+	<constraints>
+
+    <constraint type="limited_hinge" name="cloth_constraint_1" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Jacket_Back"/>
+      <param pivot="position:Jacket_Back"/>
+      <param min_angle="-5" max_angle="5" axis="xaxis:Jacket_Back" twist_freedom="15"/>
+      <param plane_axis="yaxis:Jacket_Back"/>
+      <param damping="-80" spring_constant="250" min_restitution="-80"/>
+    </constraint>
+    <constraint type="limited_hinge" name="cloth_constraint_2" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Jacket_Back_Left"/>
+      <param pivot="position:Jacket_Back_Left"/>
+      <param min_angle="-5" max_angle="5" axis="xaxis:Jacket_Back_Left" twist_freedom="15"/>
+      <param plane_axis="yaxis:Jacket_Back_Left"/>
+      <param damping="-80" spring_constant="250" min_restitution="-80"/>
+    </constraint>
+    <constraint type="limited_hinge" name="cloth_constraint_3" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Jacket_Back_Right"/>
+      <param pivot="position:Jacket_Back_Right"/>
+      <param min_angle="-5" max_angle="5" axis="xaxis:Jacket_Back_Right" twist_freedom="15"/>
+      <param plane_axis="yaxis:Jacket_Back_Right"/>
+      <param damping="-80" spring_constant="250" min_restitution="-80"/>
+    </constraint>
+
+    <constraint type="limited_hinge" name="cloth_constraint_4" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Jacket_Right"/>
+      <param pivot="position:Jacket_Right"/>
+      <param min_angle="-5" max_angle="5" axis="xaxis:Jacket_Right" twist_freedom="15"/>
+      <param plane_axis="yaxis:Jacket_Right"/>
+      <param damping="-80" spring_constant="250" min_restitution="-80"/>
+    </constraint>
+
+    <constraint type="limited_hinge" name="cloth_constraint_5" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Jacket_Left"/>
+      <param pivot="position:Jacket_Left"/>
+      <param min_angle="-5" max_angle="5" axis="xaxis:Jacket_Left" twist_freedom="15"/>
+      <param plane_axis="yaxis:Jacket_Left"/>
+      <param damping="-80" spring_constant="250" min_restitution="-80"/>
+    </constraint>
+
+
+    <constraint type="limited_hinge" name="cloth_constraint_6" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Jacket_Front_Left"/>
+      <param pivot="position:Jacket_Front_Left"/>
+      <param min_angle="-5" max_angle="5" axis="xaxis:Jacket_Front_Left" twist_freedom="15"/>
+      <param plane_axis="yaxis:Jacket_Front_Left"/>
+      <param damping="-80" spring_constant="250" min_restitution="-80"/>
+    </constraint>
+    <constraint type="limited_hinge" name="cloth_constraint_7" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Jacket_Front_Right"/>
+      <param pivot="position:Jacket_Front_Right"/>
+      <param min_angle="-5" max_angle="5" axis="xaxis:Jacket_Front_Right" twist_freedom="15"/>
+      <param plane_axis="yaxis:Jacket_Front_Right"/>
+      <param damping="-80" spring_constant="250" min_restitution="-80"/>
+    </constraint>
+
+
+
+    <constraint type="limited_hinge" name="cloth_constraint_8" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Backside_Left"/>
+      <param pivot="position:Backside_Left"/>
+      <param min_angle="-3" max_angle="3" axis="xaxis:Backside_Left" twist_freedom="3"/>
+      <param plane_axis="yaxis:Backside_Left"/>
+      <param damping="4" spring_constant="250" min_restitution="0"/>
+    </constraint>
+    <constraint type="limited_hinge" name="cloth_constraint_9" enabled="true" internal_collision="true">
+      <param body_a="Dynamo_Hips" body_b="cloth_Backside_Right"/>
+      <param pivot="position:Backside_Right"/>
+      <param min_angle="-3" max_angle="3" axis="xaxis:Backside_Right" twist_freedom="3"/>
+      <param plane_axis="yaxis:Backside_Right"/>
+      <param damping="4" spring_constant="250" min_restitution="0"/>
+    </constraint>
+
+
+
+
+    <constraint type="ragdoll" name="collision_joint23" enabled="true">
+      <param body_a="Dynamo_LeftUpLeg" body_b="cloth_LeftUpLeg"/>
+      <param pivot="position:LeftUpLeg"/>
+      <param twist_axis="xaxis:LeftUpLeg" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="100" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+    <constraint type="ragdoll" name="collision_joint24" enabled="true">
+      <param body_a="Dynamo_LeftLeg" body_b="cloth_LeftLeg"/>
+      <param pivot="position:LeftLeg"/>
+      <param twist_axis="xaxis:LeftLeg" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="100" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+    <constraint type="ragdoll" name="collision_joint26" enabled="true">
+      <param body_a="Dynamo_RightUpLeg" body_b="cloth_RightUpLeg"/>
+      <param pivot="position:RightUpLeg"/>
+      <param twist_axis="xaxis:RightUpLeg" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="100" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+    <constraint type="ragdoll" name="collision_joint27" enabled="true">
+      <param body_a="Dynamo_RightLeg" body_b="cloth_RightLeg"/>
+      <param pivot="position:RightLeg"/>
+      <param twist_axis="xaxis:RightLeg" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="100" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+
+
+
+
+
+<constraint type="ragdoll" name="cloth_constraint_10" enabled="true" >
+  <param body_a="Dynamo_Spine2" body_b="cloth_Tie_01"/>
+  <param pivot="position:Tie_01"/>
+  <param twist_axis="xaxis:Tie_01" twist_min="-5" twist_max="5" twist_freedom="3"/>
+  <param cone_y="1" cone_z="1" cone_freedom="1"/>
+  <param damping="600" spring_constant="400" min_restitution="0.005" max_restitution="0.05"/>
+</constraint>
+<constraint type="ragdoll" name="cloth_constraint_11" enabled="true" >
+  <param body_a="cloth_Tie_01" body_b="cloth_Tie_02"/>
+  <param pivot="position:Tie_02"/>
+  <param twist_axis="xaxis:Tie_02" twist_min="-5" twist_max="5" twist_freedom="3"/>
+  <param cone_y="1" cone_z="1" cone_freedom="1"/>
+  <param damping="600" spring_constant="400" min_restitution="0.005" max_restitution="0.05"/>
+</constraint>
+<constraint type="ragdoll" name="cloth_constraint_12" enabled="true" >
+  <param body_a="cloth_Tie_02" body_b="cloth_Tie_03"/>
+  <param pivot="position:Tie_03"/>
+  <param twist_axis="xaxis:Tie_03" twist_min="-5" twist_max="5" twist_freedom="3"/>
+  <param cone_y="1" cone_z="1" cone_freedom="1"/>
+  <param damping="600" spring_constant="400" min_restitution="0.005" max_restitution="0.05"/>
+</constraint>
+
+
+
+
+
+
+
+
+<constraint type="ragdoll" name="strand_constraint_1" enabled="true" >
+  <param body_a="Dynamo_Head" body_b="strand_Jimmy_Hair_Front"/>
+  <param pivot="position:Jimmy_Hair_Front"/>
+  <param twist_axis="xaxis:Jimmy_Hair_Front" twist_min="-5" twist_max="5" twist_freedom="3"/>
+  <param plane_axis="xaxis:Jimmy_Hair_Front"/>                        
+  <param cone_y="5" cone_z="5" cone_freedom="5"/>
+  <param damping="300" spring_constant="400" min_restitution="0.01" max_restitution="0.01"/>
+</constraint>
+
+<constraint type="ragdoll" name="strand_constraint_2" enabled="true" >
+  <param body_a="Dynamo_Head" body_b="strand_Jimmy_Hair_Right"/>
+  <param pivot="position:Jimmy_Hair_Right"/>
+  <param twist_axis="xaxis:Jimmy_Hair_Right" twist_min="-5" twist_max="5" twist_freedom="3"/>
+  <param plane_axis="xaxis:Jimmy_Hair_Right"/>                        
+  <param cone_y="5" cone_z="5" cone_freedom="5"/>
+  <param damping="300" spring_constant="400" min_restitution="0.01" max_restitution="0.01"/>
+</constraint>
+
+<constraint type="ragdoll" name="strand_constraint_3" enabled="true" >
+  <param body_a="Dynamo_Head" body_b="strand_Jimmy_Hair_Left"/>
+  <param pivot="position:Jimmy_Hair_Left"/>
+  <param twist_axis="xaxis:Jimmy_Hair_Left" twist_min="-5" twist_max="5" twist_freedom="3"/>
+  <param plane_axis="xaxis:Jimmy_Hair_Left"/>                        
+  <param cone_y="5" cone_z="5" cone_freedom="5"/>
+  <param damping="300" spring_constant="400" min_restitution="0.01" max_restitution="0.01"/>
+</constraint>
+
+<constraint type="ragdoll" name="strand_constraint_4" enabled="true" >
+  <param body_a="Dynamo_Head" body_b="strand_Jimmy_Hair_Back"/>
+  <param pivot="position:Jimmy_Hair_Back"/>
+  <param twist_axis="xaxis:Jimmy_Hair_Back" twist_min="-5" twist_max="5" twist_freedom="3"/>
+  <param plane_axis="xaxis:Jimmy_Hair_Back"/>                        
+  <param cone_y="5" cone_z="5" cone_freedom="5"/>
+  <param damping="300" spring_constant="400" min_restitution="0.01" max_restitution="0.01"/>
+</constraint>
+
+
+	</constraints>
+	
+	<decal_surfaces default_material="flesh" />
+
+	<effects>
+		<effect_spawner name="es_e_taser" enabled="false"  object="e_taser" effect="effects/particles/weapons/taser_effect" />
+	</effects>
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_box">
+      <object name="g_head_chains"    enabled="false"  shadow_caster="true" />      
+      <object name="g_head_dallas"    enabled="true"  shadow_caster="true" />
+			<object name="g_head_dragan" 		enabled="false" shadow_caster="true" />
+			<object name="g_head_sokol" 		enabled="false" shadow_caster="true" />
+			<object name="g_sokol_mask_on" 		enabled="false" shadow_caster="true" />
+			<object name="g_sokol_mask_off" 	enabled="false" shadow_caster="true" />
+			<object name="g_sokol_hair" 		enabled="false" shadow_caster="true" />
+			<object name="g_head_hoxton" 		enabled="false" shadow_caster="true" />
+			<object name="g_head_old_hoxton" 	enabled="false" shadow_caster="true" />
+			<object name="g_head_john_wick" 	enabled="false" shadow_caster="true" />
+			<object name="g_head_wolf" 			enabled="false" shadow_caster="true" />
+			<object name="g_body_shirt_tie" 	enabled="true"  shadow_caster="true" />
+			<object name="g_body_suit" 			enabled="true"  shadow_caster="true" />
+			<object name="g_body_tie_vest" 		enabled="false" shadow_caster="true" />			
+			<object name="g_body_jacket" 		enabled="false" shadow_caster="true" />
+			<object name="g_gloves_jacket" 		enabled="false" shadow_caster="true" />
+			<object name="g_head_jacket" 		enabled="false" shadow_caster="true" />
+			<object name="g_vest_small" 		enabled="false" shadow_caster="true" />
+			<object name="g_vest_thies" 		enabled="false" shadow_caster="true" />
+			<object name="g_vest_neck" 			enabled="false" shadow_caster="true" />
+			<object name="g_vest_shoulder" 		enabled="false" shadow_caster="true" />
+			<object name="g_vest_body" 			enabled="false" shadow_caster="true" />
+			<object name="g_vest_leg_arm" 		enabled="false" shadow_caster="true" />
+			<object name="g_hands" 				enabled="true"  shadow_caster="true" />
+			<object name="g_toolbag" 			enabled="false" shadow_caster="true" />
+			<object name="g_ammobag" 			enabled="false" shadow_caster="true" />
+			<object name="g_medicbag" 			enabled="false" shadow_caster="true" />
+			<object name="g_sentrybag" 			enabled="false" shadow_caster="true" />			
+			<object name="g_bodybagsbag" 		enabled="false" shadow_caster="true" />
+			<object name="g_armorbag" 			enabled="false" shadow_caster="true" />
+			<object name="g_firstaidbag" 		enabled="false" shadow_caster="true" />			
+			<object name="g_head_jiro" 			enabled="false" shadow_caster="true" />			
+			<object name="g_body_jiro" 			enabled="false" shadow_caster="true" />			
+			<object name="g_body_bodhi" 		enabled="false" shadow_caster="true" />			
+			<object name="g_gloves_bodhi" 		enabled="false" shadow_caster="true" />			
+			<object name="g_head_bodhi" 		enabled="false" shadow_caster="true" />
+			#IF DLC_COCO {
+			<object name="g_head_jimmy" 		enabled="false" shadow_caster="true" />
+			<object name="g_jimmy_mask_on" 		enabled="false" shadow_caster="true" />
+			<object name="g_jimmy_mask_off" 	enabled="false" shadow_caster="true" />
+			<object name="g_body_jimmy" 		enabled="false" shadow_caster="true" />
+			<object name="g_gloves_jimmy" 		enabled="false" shadow_caster="true" />
+			}
+			<object name="s_body" 				enabled="false" shadow_caster="false"/>						
+		</graphic_group>
+	</graphics>
+
+</dynamic_object>
