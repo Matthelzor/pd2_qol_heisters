@@ -1,0 +1,28 @@
+<table name="Matthelzor's Enhanced Quality of Life Heisters" author="Matthelzor" global_key="matthelzors_enhanced_qol_heisters">
+    <!-- DO NOT STEAL AND REDISTRIBUTE/REUPLOAD IT ANYWHERE ELSE. THIS MOD AND EVERYTHING IN IT WAS MADE BY MATTHELZOR -->
+
+    <AssetUpdates id="44809" provider="modworkshop" version="1.0"/> 
+
+    <Hooks directory="hooks">
+        <hook file="tie_states.lua" source_file="lib/tweak_data/blackmarkettweakdata"/>    
+    </Hooks>
+
+    <AddFiles>
+        <add>
+            <!-- Sequence Manager Paths -->
+            <sequence_manager path="units/payday2/characters/npc_criminals_suit_1/npc_criminals_suit_1"/>
+            <sequence_manager path="units/pd2_dlc_chill/characters/shared_character/npc_criminals_suit_chill"/>
+
+            <!-- Object Paths -->
+            <object path="units/pd2_dlc_chill/characters/shared_character/npc_criminals_suit_chill"/>
+            <object path="units/pd2_dlc_myh/characters/npc_criminals_myh/npc_criminal_myh"/>
+            <object path="units/pd2_dlc_myh/characters/npc_criminals_myh/npc_criminal_myh_menu"/>
+            <object path="units/payday2/characters/npc_criminals_suit_1/npc_criminals_suit_1"/>
+            <object path="units/payday2/characters/npc_criminals_suit_1/npc_criminals_suit_menu_1"/>
+            <object path="units/payday2/characters/npc_criminal_female_1/npc_criminal_female_1"/>
+            <object path="units/payday2/characters/npc_criminal_female_1/npc_criminal_female_1_menu"/>
+        </add>
+    </AddFiles>
+
+    <!-- DO NOT STEAL AND REDISTRIBUTE/REUPLOAD IT ANYWHERE ELSE. THIS MOD AND EVERYTHING IN IT WAS MADE BY MATTHELZOR -->
+</table>
